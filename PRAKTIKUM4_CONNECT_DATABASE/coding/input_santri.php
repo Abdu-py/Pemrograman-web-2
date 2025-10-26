@@ -11,7 +11,7 @@ $sql = "INSERT INTO data_santri (nama_santri, tempat_lahir, tanggal_lahir, kelas
         VALUES ('$nama', '$tempat', '$tanggal', '$kelas', '$nilai')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Data berhasil disimpan!<br>";
+    echo "Data berhasil disimpan ke database ujian_pondok!<br>";
     echo "<a href='form_santri.html'>Input lagi</a>";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
