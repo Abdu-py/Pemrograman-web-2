@@ -1,14 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = ""; // kosongkan jika root tidak punya password
-$database = "ujian_pondok";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "pondok"; 
 
-$conn = mysqli_connect($servername, $username, $password, $database);
+$koneksi = mysqli_connect($host, $user, $pass, $db);
 
-if (!$conn) {
+if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
-} else {
-    echo "Koneksi ke database ujian_pondok berhasil!";
 }
 ?>

@@ -1,21 +1,15 @@
 <?php
 include 'koneksi.php';
 
-$nama = $_POST['nama_santri'];
+$nama   = $_POST['nama_santri'];
 $tempat = $_POST['tempat_lahir'];
-$tanggal = $_POST['tanggal_lahir'];
-$kelas = $_POST['kelas'];
-$nilai = $_POST['nilai_ujian'];
+$tgl    = $_POST['tanggal_lahir'];
+$kelas  = $_POST['kelas'];
+$nilai  = $_POST['nilai_ujian'];
 
-$sql = "INSERT INTO data_santri (nama_santri, tempat_lahir, tanggal_lahir, kelas, nilai_ujian)
-        VALUES ('$nama', '$tempat', '$tanggal', '$kelas', '$nilai')";
+$query = "INSERT INTO santri (nama_santri, tempat_lahir, tanggal_lahir, kelas, nilai_ujian)
+          VALUES ('$nama','$tempat','$tgl','$kelas','$nilai')";
+mysqli_query($koneksi, $query);
 
-if (mysqli_query($conn, $sql)) {
-    echo "Data berhasil disimpan ke database ujian_pondok!<br>";
-    echo "<a href='form_santri.html'>Input lagi</a>";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
-mysqli_close($conn);
+header("Location: tampil_santri.php");
 ?>
