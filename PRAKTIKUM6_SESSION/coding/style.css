@@ -1,0 +1,140 @@
+/* === Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Body Global === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* === Container utama (card putih) === */
+.container {
+    background-color: #fff;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 35px;
+}
+
+/* === Header / Logo === */
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo h1 {
+    font-size: 26px;
+    color: #ee4d2d;
+    font-weight: 700;
+}
+
+/* === Judul halaman === */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* === Label & Input === */
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+input:focus {
+    border-color: #ee4d2d;
+    outline: none;
+}
+
+/* === Tombol Utama === */
+input[type="submit"], .btn {
+    background-color: #ee4d2d;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background-color: #d94424;
+}
+
+/* === Link bawah === */
+p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #ee4d2d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Halaman home === */
+.home-container {
+    background-color: #fff;
+    width: 450px;
+    padding: 40px 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.home-container h2 {
+    color: #ee4d2d;
+    margin-bottom: 10px;
+}
+
+.home-container p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #b52a36;
+}
