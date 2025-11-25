@@ -1,0 +1,219 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f1f4fa;
+    color: #1c1c1c;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #081a3d;       /* Biru dongker modern */
+    padding: 20px 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    letter-spacing: 0.5px;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 88%;
+    margin: 40px auto;
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease;
+}
+
+/* Animasi Halus */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= TABLE ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #081a3d;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+table tr {
+    background: white;
+    transition: 0.2s;
+}
+
+table td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #dce3f1;
+    font-size: 14px;
+}
+
+table tr:hover {
+    background: #eef3ff;
+    transform: scale(1.002);
+}
+
+table th, table td {
+    text-align: center;
+}
+
+td:nth-child(2) {
+    text-align: left;  /* Nama Produk tetap rata kiri */
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.btn-add {
+    background: #081a3d;
+    color: white;
+}
+
+.btn-edit {
+    background: #0d4bb5;
+    color: white;
+}
+
+.btn-delete {
+    background: #d93434;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ================= FORM ================= */
+form label {
+    font-weight: 600;
+    margin: 12px 0 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #bfc7d9;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #081a3d;
+    box-shadow: 0 0 8px rgba(8, 26, 61, 0.3);
+    outline: none;
+}
+
+form button {
+    background: #081a3d;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+form button:hover {
+    background: #06132c;
+    transform: translateY(-3px);
+}
+
+/* ================= PRODUCT GRID ================= */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.product-name {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.product-price {
+    margin-top: 6px;
+    color: #081a3d;
+    font-size: 18px;
+    font-weight: 700;
+}
+.btn-add-product {
+    display: inline-block;
+    background: #081a3d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+    margin-bottom: 18px;
+}
+
+.btn-add-product:hover {
+    background: #06132c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.btn-add-product::before {
+    content: "+ ";
+    font-weight: 700;
+}
