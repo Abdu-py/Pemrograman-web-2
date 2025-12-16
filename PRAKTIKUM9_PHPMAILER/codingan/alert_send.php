@@ -14,13 +14,13 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'abdudisini@gmail.com';
-    $mail->Password   = 'vvef oldx xjde ilwo'; 
+    $mail->Username   = '*******@gmail.com';
+    $mail->Password   = '**** **** **** ****'; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('abdudisini@gmail.com', 'Alert System');
-    $mail->addAddress('muhammad.abdu.mukh@gmail.com');
+    $mail->setFrom('********i@gmail.com', 'Alert System');
+    $mail->addAddress('***********@gmail.com');
 
     // Konten Email
     $mail->isHTML(true);

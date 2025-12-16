@@ -34,12 +34,12 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'abdudisini@gmail.com';   // ganti
-    $mail->Password   = 'vvef oldx xjde ilwo';    // ganti
+    $mail->Username   = '**************@gmail.com';   // ganti
+    $mail->Password   = '**** **** **** ****';    // ganti
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
-    $mail->setFrom('abdudisini@gmail.com', 'Alert PHPMailer');
+    $mail->setFrom('**********@gmail.com', 'Alert PHPMailer');
     $mail->addAddress($email);
 
     $mail->isHTML(true);
